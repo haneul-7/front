@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+      버튼을 클릭할 때마다 켜졌다가 꺼졌다가 -> toggle(토글)
+      버튼을 하나로 만들기
+      On  =>  https://www.w3schools.com/js/pic_bulbon.gif
+      Off =>  https://www.w3schools.com/js/pic_bulboff.gif
+  -->
+  
+  <img id="light">
+  <button onchange="on()">버튼</button>
+  <script>
+    const $light = document.getElementById('light');
+    const $on = document.getElementById('on');
+
+    $light.src= "https://www.w3schools.com/js/pic_bulboff.gif";
+
+    function on() {
+      $$light.src= "https://www.w3schools.com/js/pic_bulbon.gif";
+    }
+  </script>
+</body>
+</html>

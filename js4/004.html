@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+      점수 입력> 점수 확인> 합격,불합격
+  -->
+  <input type="text" id="nu">
+  <button onclick="ca();">입력</button>
+  <p id="target"></p>
+  <script>
+    const $nu = document.getElementById('nu');
+    const result = nu>=70? "합격" : "불합격";
+    document.getElementById('result').innerHTML=result;
+  </script>
+</body>
+</html>

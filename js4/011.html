@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //자바스크립트로 이미지 img태그에 출력
+
+    // https://th.bing.com/th/id/OIP.eN1eyjUd5OQmonQy1ORsWgHaHa?w=161&h=180&c=7&r=0&o=7&pid=1.7&rm=3
+    // https://www.w3schools.com/js/pic_bulbon.gif
+  </script>
+  <input type="text" name="" id="img" value="hello">
+  <a href="../OIP.webp">hi</a>
+  <img src="../OIP.webp">
+
+
+  <!--  -->
+
+
+  <img id="img">
+  <script>
+    document.getElementById('img'). src="https://www.w3schools.com/js/pic_bulbon.gif";
+    document.getElementById('img'). src="https://www.w3schools.com/js/pic_bulboff.gif";
+  </script>
+
+  
+<!--
+이미지 받고
+버튼으로 on,off
+-->
+
+
+<img id="im">
+<script>
+  document.getElementById('im').src=""
+</script>
+
+
+    <!--  -->
+
+  <button onclick="on()" id="on">켜기</button>
+  <img id="light">
+  <button onclick="off()"id=off>끄기</button>
+  <script>
+    const $light = document.getElementById('light');
+    const $on = document.getElementById('on');
+    const $off = document.getElementById('off');
+  
+    $light.src="https://www.w3schools.com/js/pic_bulboff.gif";
+    $off.style.visibility = "hidden";
+
+    function on() {
+      $light.src="https://www.w3schools.com/js/pic_bulbon.gif";
+      $on.style.visibility = "hidden";
+      $off.style.visibility = "visible";
+    }
+    function off() {
+      $light.src="https://www.w3schools.com/js/pic_bulboff.gif";
+      $off.style.visibility = "hidden";
+      $on.style.visibility = "visible";
+    }
+
+    // $off.style.display = "none";
+    // $on.style.display = "inline";
+  </script>
+</body>
+</html>

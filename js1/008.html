@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 값이 없다는 명시적으로 표시
+        let a = null;
+        let b;
+
+        // 버그, null은 하나의 타입
+        console.log(typeof a);
+        
+        // NaN는 숫자로 판별할 수 없는 값으로 
+        // true
+        console.log(undefined==undefined);
+        // false
+        console.log(NaN==NaN);
+        // true
+        console.log(NaN!=NaN);
+    </script>
+</body>
+</html>

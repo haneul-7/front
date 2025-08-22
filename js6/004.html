@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM 작업</title>
+</head>
+<body>
+  <ul id="manu">
+
+  </ul>
+  <script>
+    // 배열 : 데이터의 집합
+    const ar = ["삼선짜장", "삼선짬뽕", "삼선볶음밥"];
+    // 배열을 출력 ->
+    const $manu = document.getElementById('manu');
+    let html ='';
+    for(const manu of ar) {
+      html = html+ `<li>${manu}</li>`;
+    }
+    $manu.innerHTML = html;
+  </script>
+</body>
+</html>

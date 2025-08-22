@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="number" id="val">
+  <button onclick="입력();">입력</button>
+  <hr>
+  <ul id="target"></ul>
+  <script>
+    // 숫자를 입력하면 ul에 출력
+    const ar = [];
+    function 입력() {
+      const val = +document.getElementById('val').value;
+      ar.push(val);
+      console.log(ar);
+    }
+  </script>
+
+
+<!--  -->
+
+  <input type="number" id="val">
+  <button onclick="입력();">입력</button>
+  <hr>
+  <ul id="target"></ul>
+  <script>
+    // 숫자를 입력하면 ul에 출력
+    const ara = [];
+    const $val =document.getElementById('val');
+    function 입력() {
+      const val = +$val.value;
+      $val.value='';
+      $val.focus();
+      ar.push(val);
+      console.log(ara);
+    }
+  </script>
+
+<!--  -->
+
+  <input type="number" id="val">
+  <button onclick="입력();">입력</button>
+  <hr>
+  <ul id="target"></ul>
+  <script>
+    // 숫자를 입력하면 ul에 출력
+    const aras = [];
+    const $vals =document.getElementById('vals');
+    function 입력() {
+      if($avls.value===''){
+        return;
+      }
+      const vals = +$vals.value;
+      $vals.value='';
+      $vals.focus();
+      ar.push(vals);
+      console.log(aras);
+    }
+  </script>
+
+<!--  -->
+
+
+  <input type="number" id="val">
+  <button onclick="입력();">입력</button>
+  <hr>
+  <ul id="target"></ul>
+  <script>
+    // 숫자를 입력하면 ul에 출력
+    const arass = [];
+    const $valss =document.getElementById('valss');
+    const $target =document.getElementById('target');
+    function 입력() {
+      if($avlss.value===''){
+        return;
+      }
+      const valss = +$valss.value;
+      $valss.value='';
+      $valss.focus();
+      ar.push(valss);
+      
+      let html=``;
+      for(const el of ar) {
+        html+=`<li>${ei}</li>`;
+      }
+      $target.innerHTML = html;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <input type="number" id="ki" placeholder="키">
+ <input type="number" id="ga" placeholder="체중">
+ <button onclick="kim()">계산</button>
+ <script>
+  function kim() {
+    const ki = document.getElementById('ki').value;
+    const ga = document.getElementById('ga').value;
+    const hi = ki/100;
+    const bmi = ga/(hi*hi);
+    const result = (bmi<=23) ? "정상체중" : "정상체중을 넘습니다";
+  }
+
+  // document.getElementById('bmi').innerHTML = bmi;
+ </script>
+
+
+<!--  -->
+    <!--
+     // const 키 = do~
+     // const 체중 = do~
+     // const height = 키/100;
+     // const bmi = 체중/(키*키);
+     // conat result = bmi<=23? "정상체중" : " 정상체중을 넘습니다";
+    -->
+</body>
+</html>

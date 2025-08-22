@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    섭씨입력 30'c
+    화씨변경 'f
+    출력
+    섭씨에서 화씨로 변환: ℉ = (℃ × 9/5) + 32
+    화씨에서 섭씨로 변환: ℃ = (℉ - 32) × 5/9
+  -->
+    <input type="text" id="co">
+    <button onclick="on()">입력</button>
+    <p id="ta"></p>
+    <script>
+      function on() {
+        const co = document.getElementById('co').value;
+        const result = (co*9/5)+32
+        document.getElementById('ta').innerHTML=result.value;
+      }
+    </script>
+
+
+<!--  -->
+
+
+
+온도입력:<input type="text" id="degree">
+<select onchange="변환()" id="select">
+  <option value="1">섭씨로</option>
+  <option value="2">화씨로</option>
+</select>
+<input type="text" id="result" disabled>
+<script>
+  function 변환() {
+    const degree = document.getElementById('degree').value;
+    const select = document.getElementById('select').value;
+    const result = select==="1"?(degree-32)*(5/9) : degree*(9/5)+32;
+    document.getElementById('result').value=result;
+  }
+</script>
+</body>
+</html>

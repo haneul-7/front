@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .blue {color: blue;}
+    .red {color: red;}
+    #결과 {
+      width: 600;
+      margin: 600;
+    }
+  </style>
+</head>
+<body>
+  <!--
+      영어 점수와 국어 점수를 입력받아 모두 70점이상이면 합격과 파랑글자,
+      아니면 불합격과 빨강 글자로
+  -->   <!-- 영어와 국어점수 입력 / 점수 확인 / if로 결과만들기-->
+  <div id="결과"></div>
+  <input id="영어" placeholder="영어">
+  <input id="국어" placeholder="국어">
+  <button onclick="pp()">확인</button>
+  <script>
+    function pp() {
+      const jumsu=70;
+      const $결과 = document.getElementById("결과");
+      if(영어>=90, 국어>=90) {
+        const message = `<p class='blue'> ${jumsu}로 합격입니다</p>`
+      } else {
+        const message = `<p class='red'> ${jumsu}로 불합격입니다</p>`
+      }
+    }
+  </script>
+</body>
+</html>
+

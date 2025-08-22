@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+    국어 영어 성적을 입력받아 버튼을 클릭하면 총점, 평균을 출력하시오
+  -->
+    <!-- <input id="국어" placeholder="국어 점수">
+    <input id="영어" placeholder="영어 점수">
+    <button onclick="calc()">점수</button>
+    <p id="총점"></p>
+    <p id="평균"></p>
+    <script>
+      const 국어점수 = document.getElementById("국어").value;
+      const 영어점수 = document.getElementById("영어").value;
+      const 국어 = Number("국어점수");
+      const 영어 = Number("영어점수");
+      const 총점 = "국어점수" + "영어점수";
+      document.getElementById("총점").innerHTML.value;
+      const 평균 = 총점/2
+      document.getElementById("평균").innerHTML.value;
+    </script> -->
+
+      <!--  -->
+
+  국어:<input type="number" id="kor"><br/>
+  영어:<input type="number" id="eng"><br/>
+  <button onclick="calc();">계산</button>
+  <hr>
+  <p>총점<span id="tot"></span></p>
+  <p>평균<span id="avg"></span></p>
+  <script>
+    function calc() {
+      const kor = Number(document.getElementById('kor').value);
+      const eng = Number(document.getElementById('eng').value);
+      const tot = kor + eng;
+      const avg = tot/2;
+      document.getElementById('tot').innerHTML = tot;
+      document.getElementById('avg').innerHTML = avg;
+    }
+  </script>
+</body>
+</html>

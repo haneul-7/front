@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 비교연산 : 조건 1개
+    // 논리연산 : 조건들을 연결
+    //           && - 논리곱, || - 논리합
+    //           0이면 거짓, 0이 아니면 참
+    // 계산 결과가 나오면 그 뒷 부분이 남아도 계산하지 않는다
+    // ex) 시험(자격증)합격과 비슷한 형식
+    console.log(true && true && true && false);       //4번째까지 확인후 false
+    console.log(true || false || false || false);     //1번째만 계산 true
+
+    console.log(false && true && true && true);       //1번째만 계산 falsa
+  </script>
+</body>
+</html>

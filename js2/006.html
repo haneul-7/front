@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input value="3" id="dog">
+  <input value="4" id="cat">
+  <input value="5" id="cuet">
+  <p id="love"></p>
+  <script>
+    // 곱해서 출력
+    // 객체는 앞에 $
+    // 들여쓰기는 Tab
+    const $dog = document.getElementById('dog');
+    const $cat = document.getElementById('cat');
+    const $cuet = document.getElementById('cuet');
+    document.getElementById('love').innerHTML = $dog.value * $cat.value * $cuet.value;
+
+    const dog = document.getElementById('dog').value;
+    const cat = document.getElementById('cat').value;
+    const cuet = document.getElementById('cuet').value;
+    document.getElementById('love').innerHTML = dog * cat * cuet;
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="svt"></ul>
+  <script>
+    const svt = [
+      {name:'에스쿱스', nai:'30세', category:'hiphop'},
+      {name: '이지훈', nai:'29세', category: 'vocal'}
+    ]
+    const $svt = document.getElementById('svt');
+    let html = '';
+    for(const member of svt) {
+      if(member.category==='hiphop') {
+        html+=`<li class='hiphop'>${member.name} ${member.nai}</li>`
+      } else if(member.category==='vocal') {
+        html+=`<li class='vocal'>${member.name} ${member.nai}</li>`
+      }
+    }
+    $svt.innerHTML = html;
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 할일을 입력받아 ul,li를 이용해 출력 -->
+  <!-- 입력내용없이 버튼 클릭하면 skip -->
+   <input type="text" id="va">
+   <button onclick="ck()">입력</button>
+   <ui id="tar"></ui>
+   <script>
+    const ar = [];
+    const $va = document.getElementById('va');
+    function ck() {
+      const va = +$va.value;
+      $va.value=``;
+      $va.focus();
+      ar.push(va);
+
+      let html='';
+      // for()
+      // console.log(ar)
+    }
+   </script>
+</body>
+</html>

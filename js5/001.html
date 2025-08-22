@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>조건문 : if, switch(스위치)</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <!-- if(금수저니?) {
+    console.log("VIP");
+  } else if(은수저니?) {
+    consloe.log("SILVER");
+  } else {
+    consloe.log("흙수저");
+  } -->
+  <!-- <script>
+    // 90점이상 우수, 70점이상 합격, 미만 불합격
+    const jumsue=75;
+    // <input id="jumsu"></input>
+    // <butt>
+  </script> -->
+
+
+<!--  -->
+  <div id="result"></div>
+  <script>
+    const jumsu=75;
+    // 90점이상 우수, 70점이상 합격, 미만 불합격
+    const $result = document.getElementById('result');
+    let message;
+    if(jumsu>=90) {
+      message = `<p class ='blue'>${jumsu}점으로 평가는 우수입니다</p>`;
+    } else if(jumsu>=70) {
+      message = `<p class ='green'>${jumsu}점으로 평가는 합격입니다</p>`;
+    } else {
+      message = `<p class ='red'>${jumsu}점으로 평가는 불합격입니다</p>`;
+    }
+    $result. innerHTML = message;
+  </script>
+  <!--
+  
+  var message = `<p class ='blue'>${jumsu}점으로 평가는 우수입니다</p>`;
+  const message = `<p class ='blue'>${jumsu}점으로 평가는 우수입니다</p>`;
+  -->
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .blue {color: blue;}
+    .green {color: green;}
+    .red {color: red;}
+  </style>
+</head>
+<body>
+  <!--
+      점수를 입력받아 등급을 출력
+      A등급이면 파랑. B,C,D등급이면 초록. F등급은 빨강.
+      90점 A등급 / 80점 B등급 / 70점 C등급 / 60점 D등급 / F등급
+  --> <!-- 점수 입력,버튼 / 등급 확인 / if로 등급,색 지정 -->
+
+  <!-- <input id="jum" placeholder="점수">
+  <button onclick="su">입력</button>
+  <div id="tar"></div>
+  <script>
+    const $jum= document.getElementById('jum');
+    function su() {
+    if(jum>=90) {
+      const message = `<p class='blue'>A등급</P>`;
+    } else if(jum>=80) {
+      const message = `<p class='green'>B등급</P>`;
+    } else if(jum>=70) {
+      const message = `<p class='green'>C등급</P>`;
+    } else if(jum>=60) {
+      const message = `<p class='green'>D등급</P>`;
+    } else {
+      const message = `<p class='red'>F등급</P>`;
+    }
+    }
+  </script> -->
+
+  <!--  -->
+  <input type="number" id="jnusu" placeholder="점수">
+  <button onclick="판정();">판정</button>
+  <div id="result"></div>
+  <script>
+    function 판정() {
+      const jumsu = +document.getElementById('jumsu').value;
+      if(jumsu>100 || jumsu<0) {
+        alert("점수는 0에서 100사이입니다");
+        document.getElementById('jumsu').value="";
+        document.getElementById('jumsu').focus();
+        // 함수를 종료시킨다
+        return;
+      }
+      const $result = +document.getElementById('result');
+      if(jumsu>=90) {
+        $result.innerHTNL = `<p class='blue'>A등급</P>`;
+      } else if(jumsu>=80) {
+        $result.innerHTNL = `<p class='green'>B등급</P>`;
+      } else if(jumsu>=70) {
+        $result.innerHTNL = `<p class='green'>C등급</P>`;
+      } else if(jumsu>=60) {
+        $result.innerHTNL = `<p class='green'>D등급</P>`;
+      } else {
+        $result.innerHTNL = `<p class='red'>F등급</P>`;
+      }
+    }
+    $result.innerHTNL= result;
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<input type="number" id="nai" placeholder="나이">
+<button onclick="youg()">계산</button>
+<p id="old"></p>
+<script>
+  function youg() {
+    const nai = document.getElementById('nai').value;
+    const a = nai<=24 && nai>=65;
+    const old = (nai>=a) ? "3000원 입니다" : "무료입니다";
+    document.getElementById('nai').innerHTML = old;
+  }
+</script>
+
+
+
+
+                      <!--  -->
+<input type="text" id="nai" placeholder="나이 입력">
+<button onclick="calc()">계산</button>
+<hr>
+<script>
+  const nai = document.getElementById("nai").value;
+  const result = nai>24 || nai<65 ? "3000원 입니다" : "무료입니다"; 
+</script>
+</body>
+</html>

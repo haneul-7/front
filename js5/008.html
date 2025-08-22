@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const ar = [90, 80, 60, 75, 85, 55, 95];
+    // 90점 이상 우수
+    // 70점 이상 통과
+    // 미만 불합격
+    // 통과인 시람들의 평균점수
+    let hap = 0;
+    let er = 0;
+    for (el of ar) {
+      if (el>=90) {
+        hap+=el;
+        er++;
+      } else if (el>=70 && el<90) {
+        hap+=el;
+        er++;
+      } else {
+
+      }
+    }
+    avg = hap/er;
+    console.log(`평균${avg}`);
+  </script>
+</body>
+</html>

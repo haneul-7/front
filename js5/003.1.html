@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!--
+      점수를 입력받아 등급을 출력
+      A등급이면 파랑. B,C,D등급이면 초록. F등급은 빨강.
+      90점 A등급 / 80점 B등급 / 70점 C등급 / 60점 D등급 / F등급
+  --> <!-- 점수 입력,버튼 / 등급 확인 / if로 등급,색 지정 -->
+
+  <input type="number" id="점수" placeholder="점수">
+  <button onclick="판정();">판정</button>
+  <div id="결과"></div>
+  <script>
+    function 판정() {
+      const $점수 = document.getElementById('점수');
+      let message;
+      if(점수>=90){
+        const message = `<p class=blue>A등급</p>`;
+      } else if(점수>=80) {
+        const message = `<p class=green>B등급</p>`;
+      } else if(점수>=70) {
+        const message = `<p class=green>C등급</p>`;
+      } else if(점수>=60){
+        const message = `<p class=green>D등급</p>`;
+      } else {
+        const message = `<p class=red>F등급</p>`;
+      }
+    }
+  </script>
+</body>
+</html>

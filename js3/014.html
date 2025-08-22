@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<input type="number" id="kei" placeholder="키">
+<input type="number" id="kg" placeholder="체중">
+<button onclick="by()">입력</button>
+<p id="and"></p>
+<script>
+  function by() {
+    const kei = document.getElementById('kei').value;
+    const kg = document.getElementById('kg').value;
+    const j = kei - kg;
+    const and = (j>=105) ? "가볍습니다" : "무겁습니다";
+    document.getElementById('and').innerHTML = and;
+    // const 키 = do~
+    // const 체중 = do~
+    // 적정체중 = 키 - 체중;
+    // const 결과 = 적정체중> 체중 ? "가볍습니다" : "무겁습니다"
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="number" id="excel" placeholder="엑셀 점수..">
+  <input type="number" id="access" placeholder="엑세스 점수..">
+  <button onclick="panjung()">판정</button>
+  <hr>
+  <p id = "result"></p>
+  <script>
+    function panjung() {
+      const excel = document.getElementById('excel').value;
+      const access = document.getElementById('access').value;
+      // 삼항 연산자
+      // const 변수 = 조건? 값1 : 값2;
+      const result = (excel>=70 && access>=70) ? "합격" : "불합격";
+      document.getElementById('result').innerHTML = result;
+    }
+  </script>
+
+
+<input type="num" id="a" placeholder="첫번째 수">
+<input type="num" id="b" placeholder="두번째 수">
+<button onclick="od()">입력</button>
+<p id = "ah"></p>
+<script>
+  function od() {
+    const a = document.getElementById('a').value;
+    const b = document.getElementById('b').value;
+    const ah = (a>=5 && b>=7) ? "공배수" : "공배수아님";
+    document.getElementById('ah').innerHTML = ah;
+  }
+</script>
+</body>
+</html>
